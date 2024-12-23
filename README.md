@@ -1,5 +1,7 @@
 # ONNX Runtime Server
 
+A fork - will attempt to embed a softmax function in the returned Onnx data, as it makes more sense to carry out that calculation in C than send it back to Python on another device to be calculated there. But let's see - as I'm not any good at any of the Cs!
+
 [![ONNX Runtime](https://img.shields.io/github/v/release/microsoft/onnxruntime?filter=v1.20.1&label=ONNX%20Runtime)](https://github.com/microsoft/onnxruntime)
 [![CMake on Linux](https://github.com/kibae/onnxruntime-server/actions/workflows/cmake-linux.yml/badge.svg)](https://github.com/kibae/onnxruntime-server/actions/workflows/cmake-linux.yml)
 [![CMake on MacOS](https://github.com/kibae/onnxruntime-server/actions/workflows/cmake-macos.yml/badge.svg)](https://github.com/kibae/onnxruntime-server/actions/workflows/cmake-macos.yml)
